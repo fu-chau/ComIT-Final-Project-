@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="author" content="Robert Starak")
+        meta(name="description" content="Coffee")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+        title Admin - The Coffeeland 
+        link(rel="stylesheet" href="/css/style.css")
+        script(src="/js/scripts.js")
+    body
+        .row
+            .col-12
+                h1 List of products
+                br
+                a(href="/admin/sklep/create") + Create Product
+
+                each product in products
+                    .row
+                        .col-12
+                            br
+                            a(href="/admin/sklep/edit/" + product._id)= product.title
+                            br
+                            a(href="/admin/sklep/delete/" + product._id)
+                                br
+                                button.button DELETE

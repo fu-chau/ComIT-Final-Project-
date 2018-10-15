@@ -1,0 +1,21 @@
+include navbar-mixin
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="author" content="Robert Starak")
+    meta(name="description" content="Coffee")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+    title The Coffeeland  
+    link(rel="stylesheet" href="css/bootstrap/bootstrap.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    script(src="scripts.js")
+  body
+    +createNavbar(navbarItems, selectedNavBar)
+    h1= mainTitle
+    block content
+  #footer.col-12
+      p &copy; 2018 thecoffeeland.com all rights reserved

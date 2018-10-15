@@ -1,0 +1,8 @@
+mixin createNavbar(items, selectedNavBar)
+  nav
+    img(src='/img/logo.png', height= '80', width='80', class='logo')
+    each item in items
+      if item.content === selectedNavBar
+        span= item.content
+      else
+        a(href=item.href)= item.content

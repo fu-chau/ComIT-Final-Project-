@@ -1,0 +1,8 @@
+{ "title": "Aeoropres", "description": "co to jest", "price": "60$", "img": "./public/img/sklep/aeropress.jpg", "alt":"aeropress photo"}
+{ "title": "Bonavita", "description": "co to dddddddjest", "price": "120$", "img": "./public/img/sklep/bonavita.jpg", "alt":"bonavita photo"}
+{ "title": "Chemex", "description": "co fffff jest", "price": "35$", "img": "./public/img/sklep/chemex8.jpg", "alt":"chemex photo"}
+{ "title": "Kalita", "description": "co to jgggggest", "price": "30$", "img": "./public/img/sklep/kalita.jpg", "alt":"kalita photo"}
+{ "title": "K-cup", "description": "co tohhhhh jest", "price": "25$", "img": "./public/img/sklep/kcup.jpg", "alt":"k-cup photo"}
+{ "title": "Moccamaster", "description": "co tojjjjj jest", "price": "1200$", "img": "./public/img/sklep/moccamaster.jpg", "alt":"moccamaster photo"}
+{ "title": "Moccamaster Black", "description": "co to kkkkjest", "price": "1400$", "img": "./public/img/sklep/moccamasterblack.jpg", "alt":"moccamaster-black photo"}
+{ "title": "V-60", "description": "co tollllll jest", "price": "45$", "img": "./public/img/sklep/v60.jpg", "alt":"v-60 photo"}

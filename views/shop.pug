@@ -1,0 +1,6 @@
+extends ./layout.pug
+include products-mixin
+
+block content
+    each product in products
+        +products(product)

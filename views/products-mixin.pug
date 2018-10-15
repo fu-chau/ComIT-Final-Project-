@@ -1,0 +1,12 @@
+mixin products(product)
+  .products-wrapper
+    br
+    h2= product.title
+    p= product.description
+    p= product.add
+    p= product.price
+    img(src=`/img/sklep/${product.img}`, alt=product.altName, width= '400px',height= '400px')
+    br
+    br
+    button.button Buy now!
+    br

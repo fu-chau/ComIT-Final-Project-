@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="author" content="Robert Starak")
+        meta(name="description" content="Coffee")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous")
+        title Admin - The Coffeeland 
+        link(rel="stylesheet" href="/css/style.css")
+        script(src="/js/scripts.js")
+    body
+        .row
+            .col-12
+                #main_content.row
+                    .col-12
+                        h1 Add a product:
+        .row
+            .col-12
+                form.message(action="/admin/sklep/edit/" + product._id, method="post", enctype="multipart/form-data" class="admin")
+                    div
+                        label Product name:
+                        input(type='text', name='title', placeholder='Name', value= product.title)
+                    div
+                        label Description:
+                        input(type='text', name='description', style='height:200px', placeholder='Description', value= product.description)
+                    div
+                        label Upload image:
+                        input.picture(type='file', name='image',)
+                        img(src=`/img/sklep/${value= product.img}`, width= '400px',height= '400px')
+                    div
+                        label Price:
+                        input(type='text', name='price', placeholder='Price', value= product.price)
+                    div
+                        label Other informations:
+                        input(type='text', name='alt', placeholder='Other informations', value= product.alt)
+                    div
+                        button.button Update

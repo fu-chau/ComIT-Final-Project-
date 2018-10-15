@@ -1,0 +1,29 @@
+extends ./layout.pug
+
+block content
+    .row
+        .col-1
+        .col-10
+            div Our event planner will quote you a flat-rate price based on the unique needs of your event, the guest count and time frame of espresso service.  We want to make this process easy and straightforward for you!
+        .col-1
+    .row
+        .col-12
+            br
+            div(class='contact') Contact us: 
+                form.message(action='mailto:thecoffeeland@hotmail.com', method='post', enctype='text/plain' class='contact')
+                    div
+                        label Your name:
+                        input(type='text', name='name', placeholder='Your name', required)
+                        br
+                    div
+                        label Your e-mail:
+                        input(type='text', name='mail', placeholder='Your e-mail', required)
+                        br
+                    div
+                        label Message:
+                        input(type='text', name='message', style='height:200px', placeholder='Message', required)
+                        br
+                    div
+                        br
+                        button.button Send
+                        br
